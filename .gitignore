@@ -12,3 +12,7 @@ docs/
 
 # Dotenv file
 .env
+
+#misc
+node_modules
+.DS_Store
