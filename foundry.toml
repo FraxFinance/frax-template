@@ -3,16 +3,30 @@
 src = 'src'
 # The artifact directory
 out = 'out'
+# The script directory
+script = "script"
 # A list of paths to look for libraries in
 libs = ['lib', 'node_modules']
 # Whether or not to enable `vm.ffi`
-# ffi = true
+ffi = false
 # Enables or disables the optimizer
-optimizer = true
+optimizer = false
 # The number of optimizer runs
 optimizer_runs = 200
+# use the via-ir compiler flag
+via_ir = false
 # include metadata hash in bytecode
 bytecode_hash = "none"
+# Whether to append the metadata hash to the bytecode
+cbor_metadata = false
+# evm version (needed until all chains support PUSH0)
+evm_version = "london"
 
+[fmt]
+line_length = 1000 # This gets overriden by prettier afterwards
+tab_width = 4
+bracket_spacing = true
+int_types = "long"
+number_underscore = "thousands"
 
 # See more config options https://github.com/foundry-rs/foundry/tree/master/config

@@ -7,8 +7,8 @@
     "const-name-snakecase": "warn",
     "constructor-syntax": "error",
     "func-visibility": ["warn", { "ignoreConstructors": true }],
-    "max-line-length": ["warn", 120],
-    "not-rely-on-time": "warn",
+    "max-line-length": ["off", 120],
+    "not-rely-on-time": "off",
     "prettier/prettier": [
       "warn",
       {
@@ -16,9 +16,12 @@
       }
     ],
     "reason-string": ["warn", { "maxLength": 32 }],
-    "func-param-name-mixedCase": "warn",
+    "func-param-name-mixedCase": "off",
     "named-parameters-mapping": "warn",
     "private-vars-leading-underscore": "warn",
-    "no-console": "warn"
+    "no-console": "off",
+    "func-name-mixedcase": "off",
+    "no-unused-vars": "off",
+    "no-global-import": "off"
   }
 }

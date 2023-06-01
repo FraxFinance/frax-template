@@ -14,12 +14,12 @@
 `forge test -vvv` show stack traces for failed tests
 
 # Update to latest version of frax-standard-solidity
-`forge update`
+`npm update frax-standard-solidity`
 
 # Tooling
 This repo uses the following tools:
 - frax-standard-solidity for testing and scripting helpers
-- prettier for code formatting
+- forge fmt & prettier for code formatting
 - lint-staged & husky for pre-commit formatting checks
 - solhint for code quality and style hints
 - foundry for compiling, testing, and deploying

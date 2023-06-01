@@ -1,0 +1,9 @@
+# directories
+out
+broadcast
+cache
+artifacts
+
+# files
+*.env
+
