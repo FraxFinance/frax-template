@@ -3,7 +3,7 @@ pragma solidity ^0.8.19;
 
 import { BaseScript } from "frax-std/BaseScript.sol";
 import { console } from "frax-std/FraxTest.sol";
-import { Counter } from "../src/Counter.sol";
+import { Counter } from "../contracts/Counter.sol";
 
 // This is a free function that can be imported and used in tests or other scripts
 function deployCounter() returns (address _address){
