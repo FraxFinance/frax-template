@@ -19,3 +19,4 @@ node_modules
 .vscode
 lcov.info
 report/
+.idea/
