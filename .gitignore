@@ -17,4 +17,6 @@ docs/
 node_modules
 .DS_Store
 .vscode
+lcov.info
+report/
 .idea/
