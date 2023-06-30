@@ -56,7 +56,6 @@ via_ir = true
 [profile.test]
 src = "_"
 script = "_"
-sparse_mode = true
 optimizer = false
 build_info = false
 extra_output = []
