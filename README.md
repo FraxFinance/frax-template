@@ -1,5 +1,13 @@
 # Frax Template
 
+# Optional Setup
+Add:
+```
+function profile() {
+  FOUNDRY_PROFILE=$1 "${@:2}"}
+```
+To easily execute specific foundry profiles like `profile test forge test -w`
+
 # Installation
 `npm i && forge build`
 
@@ -7,14 +15,14 @@
 `forge build`
 
 # Test
-`forge test`
+`profile test forge test`
 
-`forge test -w` watch for file changes
+`profile test forge test -w` watch for file changes
 
-`forge test -vvv` show stack traces for failed tests
+`profile test forge test -vvv` show stack traces for failed tests
 
 # Update to latest version of frax-standard-solidity
-`npm update frax-standard-solidity`
+`git submodule update --init --remote lib/frax-standard-solidity`
 
 # Tooling
 This repo uses the following tools:
