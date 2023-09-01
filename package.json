@@ -22,8 +22,5 @@
     "prettier-plugin-solidity": "^1.1.3",
     "solhint": "^3.4.1",
     "solhint-plugin-prettier": "^0.0.5"
-  },
-  "dependencies": {
-    "frax-standard-solidity": "github:FraxFinance/frax-standard-solidity"
   }
 }
