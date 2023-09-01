@@ -10,7 +10,8 @@
   "scripts": {
     "test": "forge test",
     "prepare": "husky install",
-    "format": "forge fmt src && prettier --config ./.prettierrc.json --write src && forge fmt test && prettier --config ./.prettierrc.json --write test"
+    "format": "forge fmt src && prettier --config ./.prettierrc.json --write src && forge fmt test && prettier --config ./.prettierrc.json --write test",
+    "generate:constants": "ts-node -T scripts/generateConstants.ts"
   },
   "author": "",
   "license": "ISC",
