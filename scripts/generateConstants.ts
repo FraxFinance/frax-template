@@ -10,7 +10,7 @@ async function main() {
   const outputStrings = await Promise.all(outputStringsPromises);
   const finalString =
     `// SPDX-License-Identifier: ISC
-pragma solidity ^0.8.19;
+pragma solidity >=0.8.0;
 
 // **NOTE** Generated code, do not modify.  Run 'npm run generate:constants'.
 
