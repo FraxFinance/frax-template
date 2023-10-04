@@ -1,6 +1,6 @@
 # Frax Template
 
-# Optional Setup
+## Optional Setup
 Add:
 ```
 function profile() {
@@ -8,23 +8,23 @@ function profile() {
 ```
 To easily execute specific foundry profiles like `profile test forge test -w`
 
-# Installation
+## Installation
 `npm i && forge build`
 
-# Compile
+## Compile
 `forge build`
 
-# Test
+## Test
 `profile test forge test`
 
 `profile test forge test -w` watch for file changes
 
 `profile test forge test -vvv` show stack traces for failed tests
 
-# Update to latest version of frax-standard-solidity
+## Update to latest version of frax-standard-solidity
 `git submodule update --init --remote lib/frax-standard-solidity`
 
-# Tooling
+## Tooling
 This repo uses the following tools:
 - frax-standard-solidity for testing and scripting helpers
 - forge fmt & prettier for code formatting
