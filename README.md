@@ -21,6 +21,14 @@ To easily execute specific foundry profiles like `profile test forge test -w`
 
 `profile test forge test -vvv` show stack traces for failed tests
 
+## Deploy
+- Update environment variables
+  - If deploying to networks other than mainnet/polygon, also update the bottom of `foundry.toml`
+- Edit `package.json` scripts of `deploy` to your desired configuration
+  - NOTE: to dry-run only, remove all flags after `-vvvv`
+- `source .env`
+- `npm run deploy:{network}`
+
 ## Update to latest version of frax-standard-solidity
 `git submodule update --init --remote lib/frax-standard-solidity`
 
