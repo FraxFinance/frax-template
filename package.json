@@ -1,6 +1,6 @@
 {
   "name": "frax-template",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "",
   "main": "index.js",
   "directories": {
@@ -11,9 +11,11 @@
     "test": "forge test",
     "prepare": "husky install",
     "format": "forge fmt src && prettier --config ./.prettierrc.json --write src && forge fmt test && prettier --config ./.prettierrc.json --write test",
-    "generate:constants": "ts-node -T scripts/generateConstants.ts"
+    "generate:constants": "ts-node -T scripts/generateConstants.ts",
+    "deploy:mainnet": "forge script src/script{$ENTER_SCRIPT_FILE_HERE} --rpc-url $MAINNET_RPC_URL -vvvv --broadcast --verify --slow",
+    "deploy:polygon": "forge script src/script{$ENTER_SCRIPT_FILE_HERE} --rpc-url $POLYGON_RPC_URL -vvvv --broadcast --verify --slow"
   },
-  "author": "",
+  "author": "Frax Finance",
   "license": "ISC",
   "devDependencies": {
     "@openzeppelin/contracts": "^4.9.0",
@@ -25,5 +27,8 @@
     "solhint-plugin-prettier": "^0.0.5",
     "ts-node": "^10.9.1",
     "typescript": "^5.2.2"
+  },
+  "dependencies": {
+    "frax-standard-solidity": "github:fraxfinance/frax-standard-solidity"
   }
 }
