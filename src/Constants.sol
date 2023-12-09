@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: ISC
-pragma solidity ^0.8.19;
+pragma solidity >=0.8.0;
 
 // **NOTE** Generated code, do not modify.  Run 'npm run generate:constants'.
 
@@ -7,6 +7,7 @@ import { TestBase } from "forge-std/Test.sol";
 
 library Mainnet {
     address internal constant TIMELOCK_ADDRESS = 0x8412ebf45bAC1B340BbE8F318b928C466c4E39CA;
+    address internal constant SFRAX_FXB_SAFE_ADDRESS = 0x831822660572bd54ebaa065C2acef662a6277D40;
     address internal constant FRAXSWAP_ROUTER_ADDRESS = 0xC14d550632db8592D1243Edc8B95b0Ad06703867;
     address internal constant UNIV2_ROUTER = 0x7a250d5630B4cF539739dF2C5dAcb4c659F2488D;
     address internal constant FRAX_ERC20 = 0x853d955aCEf822Db058eb8505911ED77F175b99e;
@@ -91,6 +92,8 @@ library Mainnet {
     address internal constant WALLET_WITH_WETH = 0x8EB8a3b98659Cce290402893d0123abb75E3ab28;
     address internal constant WBTC_FRAX_PAIR_ADDRESS = 0x32467a5fc2d72D21E8DCe990906547A2b012f382;
     address internal constant WETH_FRAX_PAIR_ADDRESS = 0x794F6B13FBd7EB7ef10d1ED205c9a416910207Ff;
+    address internal constant SLIPPAGE_AUCTION_FACTORY = 0x509728dC748586214Fa30cEF61359f136523F24d;
+    address internal constant AUCTION_FACTORY = 0xcA35C3FE456a87E6CE7827D1D784741613463204;
 }
 
 abstract contract Helper is TestBase {
@@ -100,6 +103,7 @@ abstract contract Helper is TestBase {
 
     function labelConstants() public {
         vm.label(0x8412ebf45bAC1B340BbE8F318b928C466c4E39CA, "Constants.TIMELOCK_ADDRESS");
+        vm.label(0x831822660572bd54ebaa065C2acef662a6277D40, "Constants.SFRAX_FXB_SAFE_ADDRESS");
         vm.label(0xC14d550632db8592D1243Edc8B95b0Ad06703867, "Constants.FRAXSWAP_ROUTER_ADDRESS");
         vm.label(0x7a250d5630B4cF539739dF2C5dAcb4c659F2488D, "Constants.UNIV2_ROUTER");
         vm.label(0x853d955aCEf822Db058eb8505911ED77F175b99e, "Constants.FRAX_ERC20");
@@ -184,5 +188,7 @@ abstract contract Helper is TestBase {
         vm.label(0x8EB8a3b98659Cce290402893d0123abb75E3ab28, "Constants.WALLET_WITH_WETH");
         vm.label(0x32467a5fc2d72D21E8DCe990906547A2b012f382, "Constants.WBTC_FRAX_PAIR_ADDRESS");
         vm.label(0x794F6B13FBd7EB7ef10d1ED205c9a416910207Ff, "Constants.WETH_FRAX_PAIR_ADDRESS");
+        vm.label(0x509728dC748586214Fa30cEF61359f136523F24d, "Constants.SLIPPAGE_AUCTION_FACTORY");
+        vm.label(0xcA35C3FE456a87E6CE7827D1D784741613463204, "Constants.AUCTION_FACTORY");
     }
 }
