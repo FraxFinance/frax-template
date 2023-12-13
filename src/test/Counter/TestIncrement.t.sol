@@ -25,6 +25,6 @@ contract TestIncrement is BaseTest {
 
     function testIncrement() public useMultipleSetupFunctions {
         counter.increment();
-        assertEq(counter.number(), 1);
+        assertEq(counter.number(), 51);
     }
 }
