@@ -14,6 +14,9 @@ dependencies:
   frax-standard-solidity:
     specifier: github:FraxFinance/frax-standard-solidity
     version: github.com/FraxFinance/frax-standard-solidity/b99d6af999ab5046024981e4d6fcae7eafe5605c(@babel/core@7.23.6)(ethers@5.7.2)
+  solidity-bytes-utils:
+    specifier: github:GNSPS/solidity-bytes-utils
+    version: github.com/GNSPS/solidity-bytes-utils/6458fb2780a3092bc756e737f246be1de6d3d362(@babel/core@7.23.6)
 
 devDependencies:
   "@openzeppelin/contracts":
@@ -940,14 +943,14 @@ packages:
     resolution:
       { integrity: sha512-pqr857jrp2kPuO9uRjZ3PwnJTjoQy+fcdxvBTvHm6dkmEL9q+hDD/2j/0ELOBPtPnS8LjCX0gI9nbl8lVkadpg== }
     dependencies:
-      "@types/node": 18.19.3
+      "@types/node": 20.10.4
     dev: false
 
   /@types/bn.js@5.1.5:
     resolution:
       { integrity: sha512-V46N0zwKRF5Q00AZ6hWtN0T8gGmDUaUzLWQvHFo5yThtVwK/VCenFY3wXVbOvNfajEpsTfQM4IN9k/d6gUVX3A== }
     dependencies:
-      "@types/node": 18.19.3
+      "@types/node": 20.10.4
     dev: false
 
   /@types/cacheable-request@6.0.3:
@@ -956,7 +959,7 @@ packages:
     dependencies:
       "@types/http-cache-semantics": 4.0.4
       "@types/keyv": 3.1.4
-      "@types/node": 18.19.3
+      "@types/node": 12.20.55
       "@types/responselike": 1.0.3
     dev: false
 
@@ -991,7 +994,7 @@ packages:
     resolution:
       { integrity: sha512-BQ5aZNSCpj7D6K2ksrRCTmKRLEpnPvWDiLPfoGyhZ++8YtiK9d/3DBKPJgry359X/P1PfruyYwvnvwFjuEiEIg== }
     dependencies:
-      "@types/node": 18.19.3
+      "@types/node": 12.20.55
     dev: false
 
   /@types/node@12.20.55:
@@ -1011,27 +1014,26 @@ packages:
       { integrity: sha512-D08YG6rr8X90YB56tSIuBaddy/UXAA9RKJoFvrsnogAum/0pmjkgi4+2nx96A330FmioegBWmEYQ+syqCFaveg== }
     dependencies:
       undici-types: 5.26.5
-    dev: true
 
   /@types/pbkdf2@3.1.2:
     resolution:
       { integrity: sha512-uRwJqmiXmh9++aSu1VNEn3iIxWOhd8AHXNSdlaLfdAAdSTY9jYVeGWnzejM3dvrkbqE3/hyQkQQ29IFATEGlew== }
     dependencies:
-      "@types/node": 18.19.3
+      "@types/node": 20.10.4
     dev: false
 
   /@types/responselike@1.0.3:
     resolution:
       { integrity: sha512-H/+L+UkTV33uf49PH5pCAUBVPNj2nDBXTN+qS1dOwyyg24l3CcicicCA7ca+HMvJBZcFgl5r8e+RR6elsb4Lyw== }
     dependencies:
-      "@types/node": 18.19.3
+      "@types/node": 12.20.55
     dev: false
 
   /@types/secp256k1@4.0.6:
     resolution:
       { integrity: sha512-hHxJU6PAEUn0TP4S/ZOzuTUvJWuZ6eIKeNKb5RBpODvSl6hp1Wrw4s7ATY50rklRCScUDpHzVA/DQdSjJ3UoYQ== }
     dependencies:
-      "@types/node": 18.19.3
+      "@types/node": 20.10.4
     dev: false
 
   /@types/underscore@1.11.15:
