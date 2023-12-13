@@ -24,7 +24,7 @@ contract TestIncrement is BaseTest {
         vm.revertTo(_original);
     }
 
-    function testSetNumber(uint256 x) public {
+    function testSetNumber(uint256 x) public useMultipleSetupFunctions {
         counter.setNumber(x);
         assertEq(counter.number(), x);
     }
