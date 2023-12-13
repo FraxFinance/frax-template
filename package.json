@@ -8,6 +8,8 @@
     "test": "test"
   },
   "scripts": {
+    "lint:check": "prettier --check '**/*.(sol)'  --ignore-path=.gitignore",
+    "lint:fix-all": "prettier --write '**/*.(sol)' --ignore-path=.gitignore",
     "test": "forge test",
     "prepare": "husky install",
     "format": "forge fmt src && prettier --config ./.prettierrc.json --write src && forge fmt test && prettier --config ./.prettierrc.json --write test",
@@ -21,8 +23,9 @@
     "@openzeppelin/contracts": "^4.9.0",
     "husky": "^8.0.3",
     "lint-staged": "^13.2.0",
-    "prettier": "^2.8.6",
+    "prettier": "^2.8.8",
     "prettier-plugin-solidity": "^1.1.3",
+    "prettier-plugin-svelte": "^3.1.2",
     "solhint": "^3.4.1",
     "solhint-plugin-prettier": "^0.0.5",
     "ts-node": "^10.9.1",
@@ -30,8 +33,8 @@
   },
   "dependencies": {
     "ds-test": "github:dapphub/ds-test",
-    "solidity-bytes-utils": "github:GNSPS/solidity-bytes-utils",
     "forge-std": "github:foundry-rs/forge-std#e8a047e3f40f13fa37af6fe14e6e06283d9a060e",
-    "frax-standard-solidity": "github:FraxFinance/frax-standard-solidity"
+    "frax-standard-solidity": "github:FraxFinance/frax-standard-solidity",
+    "solidity-bytes-utils": "github:GNSPS/solidity-bytes-utils"
   }
 }

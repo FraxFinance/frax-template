@@ -1,34 +1,28 @@
-name: test
-
-on: workflow_dispatch
-
-env:
-  FOUNDRY_PROFILE: ci
-
+# This workflow will do a clean install of node dependencies, cache/restore them, build the source code and run tests across different versions of node
+# For more information see: https://help.github.com/actions/language-and-framework-guides/using-nodejs-with-github-actions
+name: Node.js CI
+on:
+  push:
+    branches: master
+  pull_request:
+    branches: master
 jobs:
-  check:
-    strategy:
-      fail-fast: true
-
-    name: Foundry project
+  build:
+    timeout-minutes: 60
     runs-on: ubuntu-latest
+    env:
+      MAINNET_URL: ${{ secrets.MAINNET_RPC_URL }}
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v2
         with:
-          submodules: recursive
+          node-version: 16.x
+      - uses: actions/checkout@v2
 
       - name: Install Foundry
         uses: foundry-rs/foundry-toolchain@v1
         with:
           version: nightly
-
-      - name: Run Forge build
-        run: |
-          forge --version
-          forge build --sizes
-        id: build
-
-      - name: Run Forge tests
-        run: |
-          forge test -vvv
-        id: test
+      - run: pnpm i
+      - run: pnpm lint:check
+      - run: forge build
+      - run: forge test
