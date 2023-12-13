@@ -9,7 +9,7 @@ function profile() {
 To easily execute specific foundry profiles like `profile test forge test -w`
 
 ## Installation
-`pnpm i --shamefully-hoist`
+`pnpm i`
 
 ## Compile
 `forge build`
