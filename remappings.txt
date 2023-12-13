@@ -1,1 +1,4 @@
-frax-std/=lib/frax-standard-solidity/src/
+frax-std/=node_modules/frax-standard-solidity/src/
+@prb/test/=node_modules/@prb/test/
+forge-std/=node_modules/forge-std/src/
+ds-test/=node_modules/ds-test/src/
