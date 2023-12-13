@@ -10,7 +10,6 @@ To easily execute specific foundry profiles like `profile test forge test -w`
 
 ## Installation
 `pnpm i --shamefully-hoist`
-`forge build`
 
 ## Compile
 `forge build`
@@ -30,8 +29,6 @@ To easily execute specific foundry profiles like `profile test forge test -w`
 - `source .env`
 - `npm run deploy:{network}`
 
-## Update to latest version of frax-standard-solidity
-`git submodule update --init --remote lib/frax-standard-solidity`
 
 ## Tooling
 This repo uses the following tools:
