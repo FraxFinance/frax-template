@@ -1,3 +1,0 @@
-[submodule "lib/frax-standard-solidity"]
-	path = lib/frax-standard-solidity
-	url = https://github.com/FraxFinance/frax-standard-solidity

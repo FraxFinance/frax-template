@@ -29,6 +29,8 @@
     "typescript": "^5.2.2"
   },
   "dependencies": {
-    "frax-standard-solidity": "github:fraxfinance/frax-standard-solidity"
+    "ds-test": "github:dapphub/ds-test",
+    "forge-std": "github:foundry-rs/forge-std#e8a047e3f40f13fa37af6fe14e6e06283d9a060e",
+    "frax-standard-solidity": "github:FraxFinance/frax-standard-solidity"
   }
 }
