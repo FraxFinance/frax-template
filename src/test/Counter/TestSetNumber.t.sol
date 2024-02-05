@@ -4,28 +4,32 @@ pragma solidity ^0.8.19;
 import "../BaseTest.t.sol";
 
 contract TestIncrement is BaseTest {
-    function defaultSetup() public returns (uint256 _snapshotId) {
+    function setUp() public {
+        setupFunctions.push(defaultSetup);
+        setupFunctions.push(anotherSetup);
+        addSetupFunctions(setupFunctions);
+    }
+
+    function defaultSetup() public {
         counter = new Counter();
         counter.setNumber(0);
-        _snapshotId = vm.snapshot();
     }
 
-    function anotherSetup() public returns (uint256 _snapshotId) {
+    function anotherSetup() public {
         counter = new Counter();
         counter.setNumber(50);
-        _snapshotId = vm.snapshot();
-    }
-
-    function setUp() public {
-        uint256 _original = vm.snapshot();
-        snapShotIds.push(defaultSetup());
-        vm.revertTo(_original);
-        snapShotIds.push(anotherSetup());
-        vm.revertTo(_original);
     }
 
     function testSetNumber(uint256 x) public useMultipleSetupFunctions {
         counter.setNumber(x);
         assertEq(counter.number(), x);
+    }
+
+    function testFailAssertCounterDefaultSetup() public useMultipleSetupFunctions {
+        assertEq(counter.number(), 0);
+    }
+
+    function testFailAssertCounterAnotherSetup() public useMultipleSetupFunctions {
+        assertEq(counter.number(), 50);
     }
 }
