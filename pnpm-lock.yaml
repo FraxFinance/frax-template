@@ -1,5 +1,9 @@
 lockfileVersion: "6.0"
 
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
 dependencies:
   ds-test:
     specifier: github:dapphub/ds-test
@@ -9,7 +13,7 @@ dependencies:
     version: github.com/foundry-rs/forge-std/e8a047e3f40f13fa37af6fe14e6e06283d9a060e
   frax-standard-solidity:
     specifier: github:FraxFinance/frax-standard-solidity
-    version: github.com/FraxFinance/frax-standard-solidity/71d0d47de4cd3a25ea9392d6b83228b005da1d59(ethers@5.7.2)
+    version: github.com/FraxFinance/frax-standard-solidity/65b1f01cef3de014a2d6646ebe0ca0df202cc9e6(ethers@5.7.2)
   solidity-bytes-utils:
     specifier: github:GNSPS/solidity-bytes-utils
     version: github.com/GNSPS/solidity-bytes-utils/df88556cbbc267b33a787a3a6eaa32fd7247b589
@@ -26,19 +30,19 @@ devDependencies:
     version: 13.3.0
   prettier:
     specifier: ^3.2.4
-    version: 3.2.4
+    version: 3.2.5
   prettier-plugin-solidity:
     specifier: ^1.3.1
-    version: 1.3.1(prettier@3.2.4)
+    version: 1.3.1(prettier@3.2.5)
   prettier-plugin-svelte:
     specifier: ^3.1.2
-    version: 3.1.2(prettier@3.2.4)(svelte@4.2.9)
+    version: 3.1.2(prettier@3.2.5)(svelte@4.2.10)
   solhint:
     specifier: ^3.6.2
     version: 3.6.2(typescript@5.3.3)
   solhint-plugin-prettier:
     specifier: ^0.1.0
-    version: 0.1.0(prettier-plugin-solidity@1.3.1)(prettier@3.2.4)
+    version: 0.1.0(prettier-plugin-solidity@1.3.1)(prettier@3.2.5)
   ts-node:
     specifier: ^10.9.2
     version: 10.9.2(@types/node@20.11.16)(typescript@5.3.3)
@@ -551,13 +555,13 @@ packages:
     resolution:
       { integrity: sha512-yQJaT5HDp9hYOOp4jTYxMsR02gdFZFXhewX5HW9Jo4fsqSVqqyIO/xTHdWDaKX5a3pv1txmf076Lziz+sO7L1w== }
 
-  /@prettier/sync@0.3.0(prettier@3.2.4):
+  /@prettier/sync@0.3.0(prettier@3.2.5):
     resolution:
       { integrity: sha512-3dcmCyAxIcxy036h1I7MQU/uEEBq8oLwf1CE3xeze+MPlgkdlb/+w6rGR/1dhp6Hqi17fRS6nvwnOzkESxEkOw== }
     peerDependencies:
       prettier: ^3.0.0
     dependencies:
-      prettier: 3.2.4
+      prettier: 3.2.5
 
   /@solidity-parser/parser@0.16.2:
     resolution:
@@ -1435,9 +1439,9 @@ packages:
     dependencies:
       yallist: 4.0.0
 
-  /magic-string@0.30.6:
+  /magic-string@0.30.7:
     resolution:
-      { integrity: sha512-n62qCLbPjNjyo+owKtveQxZFZTBm+Ms6YoGD23Wew6Vw337PElFNifQpknPruVRQV57kVShPnLGo9vWxVhpPvA== }
+      { integrity: sha512-8vBuFF/I/+OSLRmdf2wwFCJCz+nSn0m6DPvGH1fS/KiQoSaR+sETbov0eIk9KhEKy8CYqIkIAnbohxT/4H0kuA== }
     engines: { node: ">=12" }
     dependencies:
       "@jridgewell/sourcemap-codec": 1.4.15
@@ -1635,7 +1639,7 @@ packages:
     dependencies:
       fast-diff: 1.3.0
 
-  /prettier-plugin-solidity@1.3.1(prettier@3.2.4):
+  /prettier-plugin-solidity@1.3.1(prettier@3.2.5):
     resolution:
       { integrity: sha512-MN4OP5I2gHAzHZG1wcuJl0FsLS3c4Cc5494bbg+6oQWBPuEamjwDvmGfFMZ6NFzsh3Efd9UUxeT7ImgjNH4ozA== }
     engines: { node: ">=16" }
@@ -1643,19 +1647,19 @@ packages:
       prettier: ">=2.3.0"
     dependencies:
       "@solidity-parser/parser": 0.17.0
-      prettier: 3.2.4
-      semver: 7.5.4
+      prettier: 3.2.5
+      semver: 7.6.0
       solidity-comments-extractor: 0.0.8
 
-  /prettier-plugin-svelte@3.1.2(prettier@3.2.4)(svelte@4.2.9):
+  /prettier-plugin-svelte@3.1.2(prettier@3.2.5)(svelte@4.2.10):
     resolution:
       { integrity: sha512-7xfMZtwgAWHMT0iZc8jN4o65zgbAQ3+O32V6W7pXrqNvKnHnkoyQCGCbKeUyXKZLbYE0YhFRnamfxfkEGxm8qA== }
     peerDependencies:
       prettier: ^3.0.0
       svelte: ^3.2.0 || ^4.0.0-next.0 || ^5.0.0-next.0
     dependencies:
-      prettier: 3.2.4
-      svelte: 4.2.9
+      prettier: 3.2.5
+      svelte: 4.2.10
     dev: true
 
   /prettier@2.8.8:
@@ -1666,9 +1670,9 @@ packages:
     requiresBuild: true
     optional: true
 
-  /prettier@3.2.4:
+  /prettier@3.2.5:
     resolution:
-      { integrity: sha512-FWu1oLHKCrtpO1ypU6J0SbK2d9Ckwysq6bHj/uaCP26DxrPpppCLQRGVuqAxSTvhF00AcvDRyYrLNW7ocBhFFQ== }
+      { integrity: sha512-3/GWa9aOC0YeD7LUfvOG2NiDyhOWRvt1k+rcKhOuYnMY24iiCphgneUfJDyFXd6rZCAnuLBv6UeAULtrhT/F4A== }
     engines: { node: ">=14" }
     hasBin: true
 
@@ -1715,9 +1719,9 @@ packages:
     hasBin: true
     dev: false
 
-  /semver@7.5.4:
+  /semver@7.6.0:
     resolution:
-      { integrity: sha512-1bCSESV6Pv+i21Hvpxp3Dx+pSD8lIPt8uVjRrxAUt/nbswYc+tK6Y2btiULjd4+fnq15PX+nqQDC7Oft7WkwcA== }
+      { integrity: sha512-EnwXhrlwXMk9gKu5/flx5sv/an57AkRplG3hTK68W7FRDN+k+OWBj65M7719OkA82XLBxrcX0KSHj+X5COhOVg== }
     engines: { node: ">=10" }
     hasBin: true
     dependencies:
@@ -1790,17 +1794,17 @@ packages:
       - debug
     dev: false
 
-  /solhint-plugin-prettier@0.1.0(prettier-plugin-solidity@1.3.1)(prettier@3.2.4):
+  /solhint-plugin-prettier@0.1.0(prettier-plugin-solidity@1.3.1)(prettier@3.2.5):
     resolution:
       { integrity: sha512-SDOTSM6tZxZ6hamrzl3GUgzF77FM6jZplgL2plFBclj/OjKP8Z3eIPojKU73gRr0MvOS8ACZILn8a5g0VTz/Gw== }
     peerDependencies:
       prettier: ^3.0.0
       prettier-plugin-solidity: ^1.0.0
     dependencies:
-      "@prettier/sync": 0.3.0(prettier@3.2.4)
-      prettier: 3.2.4
+      "@prettier/sync": 0.3.0(prettier@3.2.5)
+      prettier: 3.2.5
       prettier-linter-helpers: 1.0.0
-      prettier-plugin-solidity: 1.3.1(prettier@3.2.4)
+      prettier-plugin-solidity: 1.3.1(prettier@3.2.5)
 
   /solhint@3.6.2(typescript@5.3.3):
     resolution:
@@ -1820,7 +1824,7 @@ packages:
       js-yaml: 4.1.0
       lodash: 4.17.21
       pluralize: 8.0.0
-      semver: 7.5.4
+      semver: 7.6.0
       strip-ansi: 6.0.1
       table: 6.8.1
       text-table: 0.2.0
@@ -1903,9 +1907,9 @@ packages:
     dependencies:
       has-flag: 4.0.0
 
-  /svelte@4.2.9:
+  /svelte@4.2.10:
     resolution:
-      { integrity: sha512-hsoB/WZGEPFXeRRLPhPrbRz67PhP6sqYgvwcAs+gWdSQSvNDw+/lTeUJSWe5h2xC97Fz/8QxAOqItwBzNJPU8w== }
+      { integrity: sha512-Ep06yCaCdgG1Mafb/Rx8sJ1QS3RW2I2BxGp2Ui9LBHSZ2/tO/aGLc5WqPjgiAP6KAnLJGaIr/zzwQlOo1b8MxA== }
     engines: { node: ">=16" }
     dependencies:
       "@ampproject/remapping": 2.2.1
@@ -1920,7 +1924,7 @@ packages:
       estree-walker: 3.0.3
       is-reference: 3.0.2
       locate-character: 3.0.0
-      magic-string: 0.30.6
+      magic-string: 0.30.7
       periscopic: 3.1.0
     dev: true
 
@@ -2128,12 +2132,12 @@ packages:
       { integrity: sha512-Ux4ygGWsu2c7isFWe8Yu1YluJmqVhxqK2cLXNQA5AcC3QfbGNpM7fu0Y8b/z16pXLnFxZYvWhd3fhBY9DLmC6Q== }
     engines: { node: ">=6" }
 
-  github.com/FraxFinance/frax-standard-solidity/71d0d47de4cd3a25ea9392d6b83228b005da1d59(ethers@5.7.2):
+  github.com/FraxFinance/frax-standard-solidity/65b1f01cef3de014a2d6646ebe0ca0df202cc9e6(ethers@5.7.2):
     resolution:
       {
-        tarball: https://codeload.github.com/FraxFinance/frax-standard-solidity/tar.gz/71d0d47de4cd3a25ea9392d6b83228b005da1d59,
+        tarball: https://codeload.github.com/FraxFinance/frax-standard-solidity/tar.gz/65b1f01cef3de014a2d6646ebe0ca0df202cc9e6,
       }
-    id: github.com/FraxFinance/frax-standard-solidity/71d0d47de4cd3a25ea9392d6b83228b005da1d59
+    id: github.com/FraxFinance/frax-standard-solidity/65b1f01cef3de014a2d6646ebe0ca0df202cc9e6
     name: frax-standard-solidity
     version: 1.0.0
     prepare: true
@@ -2151,11 +2155,11 @@ packages:
       fs-extra: 11.2.0
       husky: 8.0.3
       lint-staged: 13.3.0
-      prettier: 3.2.4
-      prettier-plugin-solidity: 1.3.1(prettier@3.2.4)
+      prettier: 3.2.5
+      prettier-plugin-solidity: 1.3.1(prettier@3.2.5)
       solc: 0.8.24
       solhint: 3.6.2(typescript@5.3.3)
-      solhint-plugin-prettier: 0.1.0(prettier-plugin-solidity@1.3.1)(prettier@3.2.4)
+      solhint-plugin-prettier: 0.1.0(prettier-plugin-solidity@1.3.1)(prettier@3.2.5)
       solidity-bytes-utils: 0.8.2
       toml: 3.0.0
       ts-node: 10.9.2(@types/node@18.19.14)(typescript@5.3.3)
@@ -2195,7 +2199,3 @@ packages:
     name: forge-std
     version: 1.5.6
     dev: false
-
-settings:
-  autoInstallPeers: true
-  excludeLinksFromLockfile: false
