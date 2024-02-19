@@ -58,6 +58,7 @@ optimizer = false
 build_info = false
 extra_output = []
 verbosity = 3
+via_ir = false
 
 [fmt]
 line_length = 1000 # This gets overriden by prettier afterwards

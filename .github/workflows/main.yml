@@ -27,5 +27,6 @@ jobs:
           version: nightly
       - run: pnpm i
       - run: pnpm lint:check
-      - run: forge build
-      - run: forge test
+      - run: function profile() {FOUNDRY_PROFILE=$1 "${@:2}"}
+      - run: profile deploy forge build
+      - run: profile test forge test
