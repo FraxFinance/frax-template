@@ -22,7 +22,7 @@ optimizer = false
 # The number of optimizer runs
 optimizer_runs = 200 
 # use the via-ir compiler flag
-via_ir = true
+via_ir = false
 # include metadata hash in bytecode
 bytecode_hash = "none"
 # Whether to append the metadata hash to the bytecode
