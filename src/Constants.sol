@@ -230,3 +230,67 @@ abstract contract Helper is TestBase {
         vm.label(0xa2617A26f9f528fa7B0E47fc2e66FcC04C6682E9, "Constants.CURVE_20261231_ARBITRUM_GAUGE");
     }
 }
+
+library Holesky {
+    address internal constant FPI_ERC20 = 0xfBCB0F967817c924f83e26e04F0FB28ED4d6276F;
+    address internal constant FPIS_ERC20 = 0x0363a32D18c25a3FD19a0d00B02106C03d8b8182;
+    address internal constant FRAX_ERC20 = 0x0304A365C0fbb4b1Ad423887861b9b69a5f0c00E;
+    address internal constant FXS_ERC20 = 0x4e7300F74F59AFaEcCdc0d434758Df9be238F0BF;
+    address internal constant SFRXETH_ERC20 = 0xa63f56985F9C7F3bc9fFc5685535649e0C1a55f3;
+    address internal constant FRXETH_ERC20 = 0x17845EA6a9BfD2caF1b9E558948BB4999dF2656e;
+    address internal constant FRXETH_MINTER = 0x5E8422345238F34275888049021821E8E08CAa1f;
+}
+
+library FraxtalDeployment {
+    string internal constant DEVNET = "devnet";
+    string internal constant TESTNET = "testnet";
+    string internal constant MAINNET = "mainnet";
+}
+
+library FraxtalL1Devnet {
+    address internal constant FPI_ERC20 = 0x67218f66a84809201CfBa5c8b46dBd3aB95A42da;
+    address internal constant FPIS_ERC20 = 0xC0497C072d3015fd7D45893157bCDCC1BcfEb6b5;
+    address internal constant FRAX_ERC20 = 0xac3E018457B222d93114458476f3E3416Abbe38F;
+    address internal constant FXS_ERC20 = 0xbAFA44EFE7901E04E39Dad13167D089C559c1138;
+    address internal constant SFRXETH_ERC20 = 0x56390acF12bce9675ab3922060D8d955149BE286;
+    address internal constant FRXETH_ERC20 = 0xB1C4e5a15544f005166880749C46D35a00916462;
+    address internal constant FRXETH_MINTER = 0x80f1C4F5CD94D49e98D0a975690796f1E8C0379e;
+    address internal constant FRXBTC_ERC20 = 0x3fe0150F6Daa6a54C585f85f0e78d665532e5b74;
+    address internal constant SFRAX_ERC20 = 0x1D348307745645b91c49716Fae22Ad5d4CC0b94a;
+}
+
+library FraxtalL2Devnet {
+    address internal constant PROXY_ADMIN = 0xfC00000000000000000000000000000000000009;
+    address internal constant COMPTROLLER = 0x8b1E899ec5d51387a41Ee68261149F7d3Dfd7160;
+}
+
+library FraxtalTestnet {
+    address internal constant PROXY_ADMIN = 0xfC00000000000000000000000000000000000007;
+    address internal constant FRAXSWAP_FACTORY = 0xbc679bdd1bA59654bD50DEB03fd80dC97c713fF2;
+    address internal constant FRAXSWAP_ROUTER = 0x938d99A81814f66b01010d19DDce92A633441699;
+    address internal constant FRAXSWAP_ROUTER_MULTIHOP = 0x509728dC748586214Fa30cEF61359f136523F24d;
+    address internal constant COMPTROLLER = 0x012fcFb933b9a4335B1BCC836e6a9a475146beBd;
+}
+
+library FraxtalMainnet {
+    address internal constant PROXY_ADMIN = 0xfC00000000000000000000000000000000000009;
+    address internal constant FRAXSWAP_FACTORY = 0x7a07D606c87b7251c2953A30Fa445d8c5F856C7A;
+    address internal constant FRAXSWAP_ROUTER = 0x195843F052052c3692dAcAB049e0Bf5715a24755;
+    address internal constant FRAXSWAP_ROUTER_MULTIHOP = 0x31D982ebd82Ad900358984bd049207A4c2468640;
+    address internal constant OPTIMISM_MINTABLE_PERMIT_ERC20_FACTORY_IMPLEMENTATION =
+        0x111ddab65Af5fF96b674400246699ED40F550De1;
+    address internal constant COMPTROLLER = 0xC4EB45d80DC1F079045E75D5d55de8eD1c1090E6;
+}
+
+library FraxtalStandardProxies {
+    address internal constant FRAX_PROXY = 0xFc00000000000000000000000000000000000001;
+    address internal constant FXS_PROXY = 0xFc00000000000000000000000000000000000002;
+    address internal constant FPI_PROXY = 0xFc00000000000000000000000000000000000003;
+    address internal constant FPIS_PROXY = 0xfc00000000000000000000000000000000000004;
+    address internal constant SFRXETH_PROXY = 0xFC00000000000000000000000000000000000005;
+    address internal constant WFRXETH_PROXY = 0xFC00000000000000000000000000000000000006;
+    address internal constant FRXBTC_PROXY = 0xfC00000000000000000000000000000000000007;
+    address internal constant SFRAX_PROXY = 0xfc00000000000000000000000000000000000008;
+    address internal constant L2_STANDARD_BRIDGE_PROXY = 0x4200000000000000000000000000000000000010;
+    address internal constant ERC20_FACTORY_PROXY = 0x4200000000000000000000000000000000000012;
+}

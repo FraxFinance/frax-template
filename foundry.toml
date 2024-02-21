@@ -27,8 +27,6 @@ via_ir = false
 bytecode_hash = "none"
 # Whether to append the metadata hash to the bytecode
 cbor_metadata = false
-# evm version (needed until all chains support PUSH0)
-evm_version = "london"
 # Contracts to track with --gas-report
 #gas_reports = [] 
 
@@ -60,6 +58,7 @@ optimizer = false
 build_info = false
 extra_output = []
 verbosity = 3
+via_ir = false
 
 [fmt]
 line_length = 1000 # This gets overriden by prettier afterwards
@@ -71,7 +70,9 @@ number_underscore = "thousands"
 [rpc_endpoints]
 mainnet = "${MAINNET_RPC_URL}"
 polygon = "${POLYGON_RPC_URL}"
+fraxtal = "${FRAXTAL_RPC_URL}"
 
 [etherscan]
 mainnet = { key = "${ETHERSCAN_API_KEY}", url = "${ETHERSCAN_API_URL}" }
 polygon = { key = "${POLYGONSCAN_API_KEY}", url = "${POLYGONSCAN_API_URL}" }
+fraxtal = { key = "${FRAXTAL_API_KEY}", url = "${FRAXTAL_API_URL}", chain=252 }
