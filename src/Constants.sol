@@ -113,6 +113,7 @@ library Mainnet {
     address internal constant CURVE_20261231_MAINNET_POOL = 0xe035e27A8eD6842b478933820f90093D205F7098;
     address internal constant CURVE_20261231_ARBITRUM_POOL = 0x946adc524BD312D036776798c46ceDD948DD0A0f;
     address internal constant CURVE_20261231_ARBITRUM_GAUGE = 0xa2617A26f9f528fa7B0E47fc2e66FcC04C6682E9;
+    address internal constant COMPTROLLER = 0xB1748C79709f4Ba2Dd82834B8c82D4a505003f27;
 }
 
 abstract contract Helper is TestBase {
@@ -228,10 +229,12 @@ abstract contract Helper is TestBase {
         vm.label(0xe035e27A8eD6842b478933820f90093D205F7098, "Constants.CURVE_20261231_MAINNET_POOL");
         vm.label(0x946adc524BD312D036776798c46ceDD948DD0A0f, "Constants.CURVE_20261231_ARBITRUM_POOL");
         vm.label(0xa2617A26f9f528fa7B0E47fc2e66FcC04C6682E9, "Constants.CURVE_20261231_ARBITRUM_GAUGE");
+        vm.label(0xB1748C79709f4Ba2Dd82834B8c82D4a505003f27, "Constants.COMPTROLLER");
     }
 }
 
 library Holesky {
+    uint256 internal constant CHAIN_ID = 17_000;
     address internal constant FPI_ERC20 = 0xfBCB0F967817c924f83e26e04F0FB28ED4d6276F;
     address internal constant FPIS_ERC20 = 0x0363a32D18c25a3FD19a0d00B02106C03d8b8182;
     address internal constant FRAX_ERC20 = 0x0304A365C0fbb4b1Ad423887861b9b69a5f0c00E;
@@ -239,12 +242,6 @@ library Holesky {
     address internal constant SFRXETH_ERC20 = 0xa63f56985F9C7F3bc9fFc5685535649e0C1a55f3;
     address internal constant FRXETH_ERC20 = 0x17845EA6a9BfD2caF1b9E558948BB4999dF2656e;
     address internal constant FRXETH_MINTER = 0x5E8422345238F34275888049021821E8E08CAa1f;
-}
-
-library FraxtalDeployment {
-    string internal constant DEVNET = "devnet";
-    string internal constant TESTNET = "testnet";
-    string internal constant MAINNET = "mainnet";
 }
 
 library FraxtalL1Devnet {
@@ -264,22 +261,52 @@ library FraxtalL2Devnet {
     address internal constant COMPTROLLER = 0x8b1E899ec5d51387a41Ee68261149F7d3Dfd7160;
 }
 
-library FraxtalTestnet {
-    address internal constant PROXY_ADMIN = 0xfC00000000000000000000000000000000000007;
-    address internal constant FRAXSWAP_FACTORY = 0xbc679bdd1bA59654bD50DEB03fd80dC97c713fF2;
-    address internal constant FRAXSWAP_ROUTER = 0x938d99A81814f66b01010d19DDce92A633441699;
-    address internal constant FRAXSWAP_ROUTER_MULTIHOP = 0x509728dC748586214Fa30cEF61359f136523F24d;
-    address internal constant COMPTROLLER = 0x012fcFb933b9a4335B1BCC836e6a9a475146beBd;
+library FraxtalL1 {
+    uint256 internal constant CHAIN_ID = 1;
+    address internal constant PROXY_ADMIN = 0x13Fe62cB24aEa5afd179F20D362c056c3881ABcA;
+    address internal constant COMPTROLLER = 0xB1748C79709f4Ba2Dd82834B8c82D4a505003f27;
+    address internal constant ADDRESS_MANAGER = 0x8c5D64d10394cFa070066e70Ec19E67398b4dABE;
+    address internal constant L1_CROSS_DOMAIN_MESSENGER_PROXY = 0x126bcc31Bc076B3d515f60FBC81FddE0B0d542Ed;
+    address internal constant L1_ERC721_BRIDGE_PROXY = 0xa9B5Fb84B7aeAF0D51C95DB04a76B1D4738D0eC5;
+    address internal constant L1_STANDARD_BRIDGE_PROXY = 0x34C0bD5877A5Ee7099D0f5688D65F4bB9158BDE2;
+    address internal constant L2_OUTPUT_ORACLE_PROXY = 0x66CC916Ed5C6C2FA97014f7D1cD141528Ae171e4;
+    address internal constant OPTIMISM_MINTABLE_ERC20_FACTORY_PROXY = 0x11FE3be54aC01C13Dd985cE2BdD10eD77e1376cc;
+    address internal constant OPTIMISM_PORTAL_PROXY = 0x36cb65c1967A0Fb0EEE11569C51C2f2aA1Ca6f6D;
+    address internal constant SYSTEM_CONFIG_PROXY = 0x34a9f273cbD847d49c3De015FC26c3E66825f8b2;
 }
 
-library FraxtalMainnet {
+library FraxtalL2 {
+    uint256 internal constant CHAIN_ID = 252;
     address internal constant PROXY_ADMIN = 0xfC00000000000000000000000000000000000009;
+    address internal constant COMPTROLLER = 0xC4EB45d80DC1F079045E75D5d55de8eD1c1090E6;
     address internal constant FRAXSWAP_FACTORY = 0x7a07D606c87b7251c2953A30Fa445d8c5F856C7A;
     address internal constant FRAXSWAP_ROUTER = 0x195843F052052c3692dAcAB049e0Bf5715a24755;
     address internal constant FRAXSWAP_ROUTER_MULTIHOP = 0x31D982ebd82Ad900358984bd049207A4c2468640;
     address internal constant OPTIMISM_MINTABLE_PERMIT_ERC20_FACTORY_IMPLEMENTATION =
         0x111ddab65Af5fF96b674400246699ED40F550De1;
-    address internal constant COMPTROLLER = 0xC4EB45d80DC1F079045E75D5d55de8eD1c1090E6;
+}
+
+library FraxtalTestnetL1 {
+    uint256 internal constant CHAIN_ID = 17_000;
+    address internal constant PROXY_ADMIN = 0xA0c6294D524f56fF9BdAeE94b69064c529cB9a1e;
+    address internal constant COMPTROLLER = 0x0000000000000000000000000000000000000000;
+    address internal constant ADDRESS_MANAGER = 0x6C52d1f7aAdD1F27aaa6A9e228CE0312E3CB09A6;
+    address internal constant L1_CROSS_DOMAIN_MESSENGER_PROXY = 0x45A98115D5722C6cfC48D711e0053758E7C0b8ad;
+    address internal constant L1_ERC721_BRIDGE_PROXY = 0x0301A6b26a37566d3DCebC7fC4c2143B426bBf53;
+    address internal constant L1_STANDARD_BRIDGE_PROXY = 0x0BaafC217162f64930909aD9f2B27125121d6332;
+    address internal constant L2_OUTPUT_ORACLE_PROXY = 0x715EA64DA13F4d0831ece4Ad3E8c1aa013167F32;
+    address internal constant OPTIMISM_MINTABLE_ERC20_FACTORY_PROXY = 0x740fAfe2383F736d0Bd1a042E50fE15dDa2726C6;
+    address internal constant OPTIMISM_PORTAL_PROXY = 0xB9c64BfA498d5b9a8398Ed6f46eb76d90dE5505d;
+    address internal constant SYSTEM_CONFIG_PROXY = 0x570Bf63A187776A19a44E6D1e055E3da65C1E3Db;
+}
+
+library FraxtalTestnetL2 {
+    uint256 internal constant CHAIN_ID = 2522;
+    address internal constant PROXY_ADMIN = 0xfC00000000000000000000000000000000000007;
+    address internal constant COMPTROLLER = 0x012fcFb933b9a4335B1BCC836e6a9a475146beBd;
+    address internal constant FRAXSWAP_FACTORY = 0xbc679bdd1bA59654bD50DEB03fd80dC97c713fF2;
+    address internal constant FRAXSWAP_ROUTER = 0x938d99A81814f66b01010d19DDce92A633441699;
+    address internal constant FRAXSWAP_ROUTER_MULTIHOP = 0x509728dC748586214Fa30cEF61359f136523F24d;
 }
 
 library FraxtalStandardProxies {
@@ -291,6 +318,8 @@ library FraxtalStandardProxies {
     address internal constant WFRXETH_PROXY = 0xFC00000000000000000000000000000000000006;
     address internal constant FRXBTC_PROXY = 0xfC00000000000000000000000000000000000007;
     address internal constant SFRAX_PROXY = 0xfc00000000000000000000000000000000000008;
+    address internal constant CROSS_DOMAIN_MESSENGER = 0x4200000000000000000000000000000000000007;
     address internal constant L2_STANDARD_BRIDGE_PROXY = 0x4200000000000000000000000000000000000010;
     address internal constant ERC20_FACTORY_PROXY = 0x4200000000000000000000000000000000000012;
+    address internal constant L2_TO_L1_MESSAGE_PASSER = 0x4200000000000000000000000000000000000016;
 }

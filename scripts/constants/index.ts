@@ -1,8 +1,9 @@
 export * as Mainnet from "./mainnet";
 export * as Holesky from "./holesky";
-export * as FraxtalDeployment from "./fraxtal-deployments";
 export * as FraxtalL1Devnet from "./fraxtal-devnet-l1";
 export * as FraxtalL2Devnet from "./fraxtal-devnet-l2";
-export * as FraxtalTestnet from "./fraxtal-testnet";
-export * as FraxtalMainnet from "./fraxtal-mainnet";
+export * as FraxtalL1 from "./fraxtal-l1";
+export * as FraxtalL2 from "./fraxtal-l2";
+export * as FraxtalTestnetL1 from "./fraxtal-testnet-l1";
+export * as FraxtalTestnetL2 from "./fraxtal-testnet-l2";
 export * as FraxtalStandardProxies from "./fraxtal-standard-proxies";
