@@ -71,8 +71,10 @@ number_underscore = "thousands"
 mainnet = "${MAINNET_RPC_URL}"
 polygon = "${POLYGON_RPC_URL}"
 fraxtal = "${FRAXTAL_RPC_URL}"
+fraxtal_testnet = "${FRAXTAL_TESTNET_RPC_URL}"
 
 [etherscan]
 mainnet = { key = "${ETHERSCAN_API_KEY}", url = "${ETHERSCAN_API_URL}" }
 polygon = { key = "${POLYGONSCAN_API_KEY}", url = "${POLYGONSCAN_API_URL}" }
-fraxtal = { key = "${FRAXTAL_API_KEY}", url = "${FRAXTAL_API_URL}", chain=252 }
+fraxtal = { key = "${FRAXSCAN_API_KEY}", url = "${FRAXSCAN_API_URL}", chain=252 }
+fraxtal_testnet = { key = "${FRAXSCAN_API_KEY}", url = "${FRAXSCAN_TESTNET_API_URL}", chain=2522 }

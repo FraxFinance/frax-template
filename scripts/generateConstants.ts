@@ -23,11 +23,15 @@ import { TestBase } from "forge-std/Test.sol";
 async function handleSingleNetwork(networkName, constants) {
   const constantString = Object.entries(constants)
     .map(([key, value]) => {
-      if ((value as string).startsWith("0x")) {
-        return `    address internal constant ${key} = ${value};`;
+      if (typeof value === "string") {
+        if (value.startsWith("0x")) {
+          return `    address internal constant ${key} = ${value};`;
+        }
+        return `    string internal constant ${key} = "${value}";`;
+      } else {
+        // number
+        return `    uint256 internal constant ${key} = ${value};`;
       }
-
-      return `    string internal constant ${key} = "${value}";`;
     })
     .join("\n");
 
