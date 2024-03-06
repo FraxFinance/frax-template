@@ -264,7 +264,7 @@ library FraxtalL2Devnet {
 library FraxtalL1 {
     uint256 internal constant CHAIN_ID = 1;
     address internal constant PROXY_ADMIN = 0x13Fe62cB24aEa5afd179F20D362c056c3881ABcA;
-    address internal constant COMPTROLLER = 0xB1748C79709f4Ba2Dd82834B8c82D4a505003f27;
+    address internal constant COMPTROLLER = 0xe0d7755252873c4eF5788f7f45764E0e17610508;
     address internal constant ADDRESS_MANAGER = 0x8c5D64d10394cFa070066e70Ec19E67398b4dABE;
     address internal constant L1_CROSS_DOMAIN_MESSENGER_PROXY = 0x126bcc31Bc076B3d515f60FBC81FddE0B0d542Ed;
     address internal constant L1_ERC721_BRIDGE_PROXY = 0xa9B5Fb84B7aeAF0D51C95DB04a76B1D4738D0eC5;
@@ -289,7 +289,7 @@ library FraxtalL2 {
 library FraxtalTestnetL1 {
     uint256 internal constant CHAIN_ID = 17_000;
     address internal constant PROXY_ADMIN = 0xA0c6294D524f56fF9BdAeE94b69064c529cB9a1e;
-    address internal constant COMPTROLLER = 0x0000000000000000000000000000000000000000;
+    address internal constant COMPTROLLER = 0x88699c59E413e8A47117820D15d8D33b09B21edD;
     address internal constant ADDRESS_MANAGER = 0x6C52d1f7aAdD1F27aaa6A9e228CE0312E3CB09A6;
     address internal constant L1_CROSS_DOMAIN_MESSENGER_PROXY = 0x45A98115D5722C6cfC48D711e0053758E7C0b8ad;
     address internal constant L1_ERC721_BRIDGE_PROXY = 0x0301A6b26a37566d3DCebC7fC4c2143B426bBf53;
