@@ -109,7 +109,10 @@ library Fraxswap {
     address internal constant KYBERSWAP_ELASTIC_TICK_FEES_READER_V2 = 0x8Fd8Cb948965d9305999D767A02bf79833EADbB3;
 }
 
-library Misc {}
+library Misc {
+    address internal constant FRAX_AMO_MINTER_LAYER_2 = 0x1c5400491fE82EE8FC21489C51e402B3c8a2fB81;
+    address internal constant FRAXLEND_AMO = 0xCDeE1B853AD2E96921250775b7A60D6ff78fD8B4;
+}
 
 library Multisigs {
     address internal constant CIRCUIT_BREAKER_ADDRESS = 0xDF85346111C0F9680a77d4c496b6fd5278516fa6;
