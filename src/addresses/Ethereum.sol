@@ -703,14 +703,10 @@ library FraxBonds {
     address internal constant AUCTION_20241231 = 0xc9aa98788a675FF0846E8856cb83F19452f3b0c8;
     address internal constant ORACLE_20241231 = 0x08a0748cF885F46e20fA30A50a035808eab293D3;
     address internal constant CURVE_20241231_MAINNET_POOL = 0x6307E6688819951Cf8D6B6066018243D2496952F;
-    address internal constant CURVE_20241231_ARBITRUM_POOL = 0xE920eEdAff6c3BEd1Ef61010B64d46986634E908;
-    address internal constant CURVE_20241231_ARBITRUM_GAUGE = 0x05824D6D4DE8A0ede4e12b98387A4f035a67ee68;
     address internal constant FXB_20261231 = 0x76237BCfDbe8e06FB774663add96216961df4ff3;
     address internal constant AUCTION_20261231 = 0x63981f5E690eaF7E8795c42832664e8848F532fB;
     address internal constant ORACLE_20261231 = 0x2ec5D1C13fEF1C7029eE329a1D31B2180c9b3707;
     address internal constant CURVE_20261231_MAINNET_POOL = 0xe035e27A8eD6842b478933820f90093D205F7098;
-    address internal constant CURVE_20261231_ARBITRUM_POOL = 0x946adc524BD312D036776798c46ceDD948DD0A0f;
-    address internal constant CURVE_20261231_ARBITRUM_GAUGE = 0xa2617A26f9f528fa7B0E47fc2e66FcC04C6682E9;
 }
 
 library FraxMinterPools {
@@ -1019,8 +1015,6 @@ library Multisigs {
     address internal constant TEAM = 0x8D4392F55bC76A046E443eb3bab99887F4366BB0;
     address internal constant TREASURY = 0x9AA7Db8E488eE3ffCC9CdFD4f2EaECC8ABeDCB48;
 }
-
-library Oracles {}
 
 library UniV3Pools {
     address internal constant AAVE_ETH_UNI_V3_POOL = 0x5aB53EE1d50eeF2C1DD3d5402789cd27bB52c1bB;

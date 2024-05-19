@@ -19,7 +19,7 @@ library Farms {
     address internal constant aaaa;
 }
 
-library PoolRelatedTokens {
+library FraxBonds {
     address internal constant aaaa;
 }
 
@@ -27,11 +27,7 @@ library FraxFerry {
     address internal constant aaaa;
 }
 
-library FraxBonds {
-    address internal constant aaaa;
-}
-
-library Fraxlend {
+library FraxlendAndOracles {
     address internal constant aaaa;
 }
 
@@ -47,6 +43,6 @@ library Multisigs {
     address internal constant aaaa;
 }
 
-library Oracles {
+library PoolRelatedTokens {
     address internal constant aaaa;
 }
