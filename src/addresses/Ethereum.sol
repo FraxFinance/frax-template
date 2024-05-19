@@ -576,6 +576,14 @@ library FraxMinterPools {
     address internal constant FRAX_POOL_V3 = 0x2fE065e6FFEf9ac95ab39E5042744d695F560729;
 }
 
+library Fraxswap {
+    address internal constant FRAXSWAP_FACTORY_V1 = 0xB076b06F669e682609fb4a8C6646D2619717Be4b;
+    address internal constant FRAXSWAP_FACTORY_V2 = 0x43eC799eAdd63848443E2347C49f5f52e8Fe0F6f;
+    address internal constant FRAXSWAP_ROUTER_V1 = 0x1C6cA5DEe97C8C368Ca559892CCce2454c8C35C7;
+    address internal constant FRAXSWAP_ROUTER_V2 = 0xC14d550632db8592D1243Edc8B95b0Ad06703867;
+    address internal constant FRAXSWAP_ROUTER_MULTI_HOP = 0x25e9acA5951262241290841b6f863d59D37DC4f0;
+}
+
 library Misc {
     address internal constant AAVE_AMO = 0x66635DC1EdEfF19e839f152a67278151Aa6e1B61;
     address internal constant AMO_MINTER = 0xcf37B62109b537fa0Cb9A90Af4CA72f6fb85E241; // Old: 0xF9931973fCc0c37908687Eec2CCB28fC3B94B086
@@ -649,6 +657,18 @@ library Misc {
     address internal constant YIELDSPACE_AMO = 0x8971946467a77b798762823434c0f407d20F9df9;
 }
 
+library Multisigs {
+    address internal constant ADVISORS = 0x874a873e4891fB760EdFDae0D26cA2c00922C404;
+    address internal constant COMMUNITY = 0x63278bF9AcdFC9fA65CFa2940b89A34ADfbCb4A1;
+    address internal constant COMPTROLLERS = 0xB1748C79709f4Ba2Dd82834B8c82D4a505003f27;
+    address internal constant FPI_COMPTROLLER = 0x6A7efa964Cf6D9Ab3BC3c47eBdDB853A8853C502;
+    address internal constant FPI_CORE_CONTRIBUTORS_TEAM = 0x708695db8dF61e646571E78b9b3e2BAd7D6c42E3;
+    address internal constant FPI_TREASURY = 0x5181C3c36bD52F783e6E1771d80b1e3AdCB36019;
+    address internal constant INVESTORS = 0xa95f86fE0409030136D6b82491822B3D70F890b3;
+    address internal constant TEAM = 0x8D4392F55bC76A046E443eb3bab99887F4366BB0;
+    address internal constant TREASURY = 0x9AA7Db8E488eE3ffCC9CdFD4f2EaECC8ABeDCB48;
+}
+
 library Oracles {
     address internal constant AAVE_TOKEN_DUAL_ORACLE_ADDRESS = 0x3284E1BCEaf70767A7575d0e1e10fAFbC4618B52;
     address internal constant AAVE_USD_CHAINLINK_ORACLE = 0x547a514d5e3769680Ce22B2361c10Ea13619e8a9;
@@ -689,6 +709,7 @@ library Oracles {
 library UniV3Pools {
     address internal constant AAVE_ETH_UNI_V3_POOL = 0x5aB53EE1d50eeF2C1DD3d5402789cd27bB52c1bB;
     address internal constant APE_WETH_UNI_V3_POOL = 0xAc4b3DacB91461209Ae9d41EC517c2B9Cb1B7DAF;
+    address internal constant FRAX_DAI_V3_POOL = 0x97e7d56A0408570bA1a7852De36350f7713906ec;
     address internal constant FRAX_USDC_V3_POOL = 0xc63B0708E2F7e69CB8A1df0e1389A98C35A76D52;
     address internal constant FRAX_WETH_UNI_V3_POOL = 0x92c7b5Ce4CB0e5483F3365C1449f21578eE9f21A;
     address internal constant FRXETH_FRAX_V3_POOL = 0x36C060Cc4b088c830a561E959A679A58205D3F56;
@@ -697,4 +718,18 @@ library UniV3Pools {
     address internal constant STATIC_UNI_V3_ORACLE = 0xB210CE856631EeEB767eFa666EC7C1C57738d438;
     address internal constant UNI_ETH_UNI_V3_POOL = 0x1d42064Fc4Beb5F8aAF85F4617AE8b3b5B8Bd801;
     address internal constant USDC_WETH_UNI_V3_POOL = 0x88e6A0c2dDD26FEEb64F039a2c41296FcB3f5640;
+}
+
+library UniswapV3Misc {
+    address internal constant UNISWAPV3FACTORY = 0x1F98431c8aD98523631AE4a59f267346ea31F984;
+    address internal constant NONFUNGIBLEPOSITIONMANAGER = 0xC36442b4a4522E871399CD717aBDD847Ab11FE88;
+    address internal constant SWAPROUTER = 0xE592427A0AEce92De3Edee1F18E0157C05861564;
+    address internal constant KYBERSWAP_ELASTIC_FACTORY = 0x5F1dddbf348aC2fbe22a163e30F99F9ECE3DD50a;
+    address internal constant KYBERSWAP_ELASTIC_FACTORY_V2 = 0xC7a590291e07B9fe9E64b86c58fD8fC764308C4A;
+    address internal constant KYBERSWAP_ELASTIC_POS_MGR = 0x2B1c7b41f6A8F2b2bc45C3233a5d5FB3cD6dC9A8;
+    address internal constant KYBERSWAP_ELASTIC_POS_MGR_V2 = 0xe222fBE074A436145b255442D919E4E3A6c6a480;
+    address internal constant KYBERSWAP_ELASTIC_ROUTER = 0xC1e7dFE73E1598E3910EF4C7845B68A9Ab6F4c83;
+    address internal constant KYBERSWAP_ELASTIC_ROUTER_V2 = 0xF9c2b5746c946EF883ab2660BbbB1f10A5bdeAb4;
+    address internal constant KYBERSWAP_ELASTIC_TICK_FEES_READER = 0xD7ab1699280980E756C446769B4c0F04550f88c9;
+    address internal constant KYBERSWAP_ELASTIC_TICK_FEES_READER_V2 = 0x8Fd8Cb948965d9305999D767A02bf79833EADbB3;
 }
