@@ -16,33 +16,33 @@ library Canonicals {
 }
 
 library Farms {
-    address internal constant aaaa;
+    address internal constant aaa = xxx;
 }
 
 library FraxBonds {
-    address internal constant aaaa;
+    address internal constant aaa = xxx;
 }
 
 library FraxFerry {
-    address internal constant aaaa;
+    address internal constant aaa = xxx;
 }
 
 library FraxlendAndOracles {
-    address internal constant aaaa;
+    address internal constant aaa = xxx;
 }
 
 library Fraxswap {
-    address internal constant aaaa;
+    address internal constant aaa = xxx;
 }
 
 library Misc {
-    address internal constant aaaa;
+    address internal constant aaa = xxx;
 }
 
 library Multisigs {
-    address internal constant aaaa;
+    address internal constant aaa = xxx;
 }
 
 library PoolRelatedTokens {
-    address internal constant aaaa;
+    address internal constant aaa = xxx;
 }
