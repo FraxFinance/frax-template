@@ -6,14 +6,14 @@ pragma solidity >=0.8.0;
 import { TestBase } from "forge-std/Test.sol";
 
 library Canonicals {
-    address internal constant FRAX = 0xac3E018457B222d93114458476f3E3416Abbe38F;
-    address internal constant FXS = 0xbAFA44EFE7901E04E39Dad13167D089C559c1138;
-    address internal constant FPI = 0x67218f66a84809201CfBa5c8b46dBd3aB95A42da;
-    address internal constant FPIS = 0xC0497C072d3015fd7D45893157bCDCC1BcfEb6b5;
-    address internal constant FRXBTC = 0x3fe0150F6Daa6a54C585f85f0e78d665532e5b74;
-    address internal constant FRXETH = 0xB1C4e5a15544f005166880749C46D35a00916462;
-    address internal constant SFRXETH = 0x56390acF12bce9675ab3922060D8d955149BE286;
-    address internal constant SFRAX = 0x1D348307745645b91c49716Fae22Ad5d4CC0b94a;
+    address internal constant FRAX = 0x114a0318Da080A2Ee3380269d796E93DF767D24F;
+    address internal constant FXS = 0xD86518aDB08DF9AcF9E84EB216d7862bc0F634C0;
+    address internal constant FPI = 0xfC75d8fD01fD999D2A4731a01d87131b40A8a645;
+    address internal constant FPIS = 0x9445aD9a63def63CA9D23cfd7cd72538BbF1780A;
+    address internal constant FRXBTC = 0x2a2acd879050aC8910d80dccb428a0AEf77fFA36;
+    address internal constant FRXETH = 0x51Ed07ceB785d2983e56CF00CAf65499dae5df3B;
+    address internal constant SFRXETH = 0x2787eC65f085acbbE94F1bB7E099dF06B56b6DaC;
+    address internal constant SFRAX = 0xB26fDD0FF10A287a73EFaa0b18A0e57fd8168835;
 }
 
 library Farms {}
@@ -27,9 +27,12 @@ library FraxlendAndOracles {}
 library Fraxswap {}
 
 library Misc {
-    address internal constant FRXETH_MINTER = 0x80f1C4F5CD94D49e98D0a975690796f1E8C0379e;
+    uint256 internal constant CHAIN_ID = 2520;
+    address internal constant FRXETH_MINTER = 0x890205b3397a1F273BaD55476F2856886964E788;
 }
 
-library Multisigs {}
+library Multisigs {
+    address internal constant COMPTROLLER = 0x8b1E899ec5d51387a41Ee68261149F7d3Dfd7160;
+}
 
 library PoolRelatedTokens {}

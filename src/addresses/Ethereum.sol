@@ -898,10 +898,10 @@ library FraxtalL1 {
     address internal constant PROXY_ADMIN = 0x13Fe62cB24aEa5afd179F20D362c056c3881ABcA;
     address internal constant SUPERCHAIN_CONFIG_PROXY = 0x61ca43CB037aC9181d8Fa5CD0073dC314065Ccc4;
     address internal constant SYSTEM_CONFIG_PROXY = 0x34a9f273cbD847d49c3De015FC26c3E66825f8b2;
-    uint256 internal constant CHAIN_ID = 1;
 }
 
 library Misc {
+    uint256 internal constant CHAIN_ID = 1;
     address internal constant AAVE_AMO = 0x66635DC1EdEfF19e839f152a67278151Aa6e1B61;
     address internal constant AMO_MINTER = 0xcf37B62109b537fa0Cb9A90Af4CA72f6fb85E241; // Old: 0xF9931973fCc0c37908687Eec2CCB28fC3B94B086
     address internal constant AMO_MINTER_OLD = 0x36a0B6a5F7b318A2B4Af75FFFb1b51a5C78dEB8C;
