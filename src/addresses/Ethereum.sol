@@ -905,6 +905,7 @@ library Misc {
     address internal constant AAVE_AMO = 0x66635DC1EdEfF19e839f152a67278151Aa6e1B61;
     address internal constant AMO_MINTER = 0xcf37B62109b537fa0Cb9A90Af4CA72f6fb85E241; // Old: 0xF9931973fCc0c37908687Eec2CCB28fC3B94B086
     address internal constant AMO_MINTER_OLD = 0x36a0B6a5F7b318A2B4Af75FFFb1b51a5C78dEB8C;
+    address internal constant BALANCE_CHECKER = 0x0be27F994E24F8C3E5f6D0C28AbB5732256ee205;
     address internal constant BUNDLE_UTILS = 0xD1a7b80a954e56bfd7bd889aF6e2BE8674719F5d;
     address internal constant CONVEX_AMO = 0x49ee75278820f409ecd67063D8D717B38d66bd71; // Impl: 0x49f77ddd4d57636ab4c98d8f18ca5f4b5210983d
     address internal constant CONVEX_AMO_ADMIN = 0xE53d45ABe10Ce20427D20c5a1b6360Fa5BA0cE0A;
