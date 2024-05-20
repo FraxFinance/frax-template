@@ -83,6 +83,7 @@ library FraxlendAndOracles {
     address internal constant FRAXLEND_HOT_WALLET = 0xdB3388e770F49A604E11f1a2084B39279492a61f;
     address internal constant FRAXLEND_PAIR_REGISTRY_ADDRESS = 0x0bD2fFBcB0A17De2d5a543ec2D47C772eeaD316d;
     address internal constant FRAXLEND_PAIR_DEPLOYER_V4_ADDRESS = 0xc70CC721d19dC7e627B81fEacb6a357Fb11200Af;
+    address internal constant FRAXLEND_PAIR_ARB_FRAX = 0x2D0483FefAbA4325c7521539a3DFaCf94A19C472;
     address internal constant ARBITRUM_DUAL_ORACLE_ADDRESS = 0x5985FBb03b6A5EA390871c2bB9742cD406575667;
     address internal constant ARB_ETH_UNI_V3_POOL = 0xC6F780497A95e246EB9449f5e4770916DCd6396A;
     address internal constant ARB_USD_CHAINLINK_ORACLE = 0xb2A824043730FE05F3DA2efaFa1CBbe83fa548D6;
@@ -91,8 +92,10 @@ library FraxlendAndOracles {
     address internal constant WETH_ERC20 = 0x82aF49447D8a07e3bd95BD0d56f35241523fBab1;
     address internal constant FRAX_ERC20 = 0x17FC002b466eEc40DaE837Fc4bE5c67993ddBd6F;
     address internal constant VARIABLE_RATE_V2 = 0x6c1b76Ca12d74970d40Aec4d6f2E3A653CC58685;
+    address internal constant FRAXLEND_PAIR_GMX_FRAX = 0x6076ebDFE17555ed3E6869CF9C373Bbd9aD55d38;
     address internal constant GMX_DUAL_ORACLE_ADDRESS = 0x92e606Fd8b99F99928f690a5bEb20f6f6e3ec0f3;
     address internal constant GMX_ERC20 = 0xfc5A1A6EB076a2C7aD06eD22C90d7E710E35ad0a;
+    address internal constant FRAXLENDPAIR_WBTC_FRAX = 0x9168AC3a83A31bd85c93F4429a84c05db2CaEF08;
     address internal constant WBTC_DUAL_ORACLE_ADDRESS = 0x34b7525FB0735342Ef3E73d0ED2a912aaAC6c617;
     address internal constant WBTC_ERC20 = 0x2f2a2543B76A4166549F7aaB2e75Bef0aefC5B0f;
 }
