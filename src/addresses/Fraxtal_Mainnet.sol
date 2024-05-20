@@ -93,6 +93,8 @@ library Fraxswap {
 }
 
 library Misc {
+    address internal constant BALANCE_CHECKER = 0x219356ef2f11a314Dd0D8bfd7f4B0B951Cb16c3a;
+    address internal constant DELEGATION_REGISTRY = 0x098c837FeF2e146e96ceAF58A10F68Fc6326DC4C;
     address internal constant FPISLOCKER_UTILS = 0x858aFbE668F4f562900Bae3e2DAed65D88027aEA;
     address internal constant FPISLOCKER_IMPLEMENTATION = 0x36B406A00997E4bd5B9bB3618d832fB88Fb09840;
     address internal constant FPISLOCKER_OLD_IMPLEMENTATION = 0xE91488002186029221EFC2449C19aDdF79E61C01;
