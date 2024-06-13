@@ -10,3 +10,21 @@ export const L2_OUTPUT_ORACLE_PROXY = "0x715EA64DA13F4d0831ece4Ad3E8c1aa013167F3
 export const OPTIMISM_MINTABLE_ERC20_FACTORY_PROXY = "0x740fAfe2383F736d0Bd1a042E50fE15dDa2726C6";
 export const OPTIMISM_PORTAL_PROXY = "0xB9c64BfA498d5b9a8398Ed6f46eb76d90dE5505d";
 export const SYSTEM_CONFIG_PROXY = "0x570Bf63A187776A19a44E6D1e055E3da65C1E3Db";
+
+// Canonicals
+
+// Farms
+
+// FraxBonds
+
+// FraxFerry
+
+// FraxlendAndOracles
+
+// Fraxswap
+
+// Misc
+
+// Multisigs
+
+// PoolRelatedTokens
