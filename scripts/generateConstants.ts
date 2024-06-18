@@ -8,18 +8,18 @@ const networkPrefixes = {
   Avalanche: "AVAX",
   BSC: "BSC",
   Fantom: "FTM",
-  FraxtalL1Devnet: "FXTLL1DN",
-  FraxtalL2Devnet: "FXTLL2DN",
+  FraxtalL1Devnet: "FXTL_L1_DN",
+  FraxtalL2Devnet: "FXTL_L2_DN",
   FraxtalL2: "FXTL",
-  FraxtalTestnetL1: "FXTLTNL1",
-  FraxtalTestnetL2: "FXTLTNL2",
+  FraxtalTestnetL1: "FXTL_TN_L1",
+  FraxtalTestnetL2: "FXTL_TN_L2",
   Holesky: "HOLESKY",
   Mainnet: "ETH",
   Moonbeam: "MNBM",
   Moonriver: "MOVR",
   Optimism: "OPTI",
   Polygon: "POLY",
-  PolygonzkEVM: "POLYZKEVM",
+  PolygonzkEVM: "POLY_ZKEVM",
 };
 
 const REMOVE_DUPLICATE_LABELS = false;
@@ -31,23 +31,22 @@ async function main() {
   // Prepare seen/duplicate values
   const seenValues = [];
 
-  // Generate the strings
-  const outputStringsPromises = networks.map((networkName) => {
-    return handleSingleNetwork(networkName, constants[networkName], seenValues);
-  });
+  // Generate the files
+  for (let n = 0; n < networks.length; n++) {
+    const networkName = networks[n];
+    const outputString = await handleSingleNetwork(networkName, constants[networkName], seenValues);
 
-  // Write to Constants.sol
-  const outputStrings = await Promise.all(outputStringsPromises);
-  const finalString =
-    `// SPDX-License-Identifier: ISC
+    const finalString =
+      `// SPDX-License-Identifier: ISC
 pragma solidity >=0.8.0;
 
 // **NOTE** Generated code, do not modify.  Run 'npm run generate:constants'.
 
 import { TestBase } from "forge-std/Test.sol";
 
-	` + outputStrings.join("\n");
-  await fs.writeFile(path.resolve("src", "Constants.sol"), finalString);
+	` + outputString;
+    await fs.writeFile(path.resolve("src/contracts/chain-constants", `${networkName}.sol`), finalString);
+  }
 }
 
 async function handleSingleNetwork(networkName, constants, seenValues) {
