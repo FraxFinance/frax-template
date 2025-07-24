@@ -24,12 +24,4 @@ contract TestIncrement is BaseTest {
         counter.setNumber(x);
         assertEq(counter.number(), x);
     }
-
-    function testFailAssertCounterDefaultSetup() public useMultipleSetupFunctions {
-        assertEq(counter.number(), 0);
-    }
-
-    function testFailAssertCounterAnotherSetup() public useMultipleSetupFunctions {
-        assertEq(counter.number(), 50);
-    }
 }
