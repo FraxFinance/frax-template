@@ -14,8 +14,8 @@ importers:
         specifier: github:foundry-rs/forge-std#60acb7aaadcce2d68e52986a0a66fe79f07d138f
         version: https://codeload.github.com/foundry-rs/forge-std/tar.gz/60acb7aaadcce2d68e52986a0a66fe79f07d138f
       frax-standard-solidity:
-        specifier: github:FraxFinance/frax-standard-solidity
-        version: https://codeload.github.com/FraxFinance/frax-standard-solidity/tar.gz/edd667c2be4b455176a799cff9b932386393ef8d
+        specifier: github:FraxFinance/frax-standard-solidity#v1.1.3
+        version: https://codeload.github.com/FraxFinance/frax-standard-solidity/tar.gz/5aab6135d727fd604f31f082fd061dd983b39b23
       solidity-bytes-utils:
         specifier: github:GNSPS/solidity-bytes-utils
         version: https://codeload.github.com/GNSPS/solidity-bytes-utils/tar.gz/fc502455bb2a7e26a743378df042612dd50d1eb9
@@ -46,7 +46,7 @@ importers:
         version: 0.1.0(prettier-plugin-solidity@1.4.3(prettier@3.6.2))(prettier@3.6.2)
       ts-node:
         specifier: ^10.9.2
-        version: 10.9.2(@types/node@18.19.120)(typescript@5.8.3)
+        version: 10.9.2(@types/node@24.10.1)(typescript@5.8.3)
       typescript:
         specifier: ^5.8.3
         version: 5.8.3
@@ -150,9 +150,9 @@ packages:
     resolution:
       { integrity: sha512-D5qGUYwjvnNNextdU59/+fI+spnwtTFmyQP0h+PfIOSkNfpU6AOICUOkm4i0OnSk+NyjdPJrxCDro0sJsWlRpQ== }
 
-  "@types/node@18.19.120":
+  "@types/node@24.10.1":
     resolution:
-      { integrity: sha512-WtCGHFXnVI8WHLxDAt5TbnCM4eSE+nI0QN2NJtwzcgMhht2eNz6V9evJrk+lwC8bCY8OWV5Ym8Jz7ZEyGnKnMA== }
+      { integrity: sha512-GNWcUTRBgIRJD5zj+Tq0fKOJ5XZajIiBroOF0yvj2bSU1WvNdYS/dn9UxwsujGW4JX06dnHyjV2y9rRaybH0iQ== }
 
   acorn-walk@8.3.4:
     resolution:
@@ -485,12 +485,12 @@ packages:
       { tarball: https://codeload.github.com/foundry-rs/forge-std/tar.gz/60acb7aaadcce2d68e52986a0a66fe79f07d138f }
     version: 1.9.7
 
-  frax-standard-solidity@https://codeload.github.com/FraxFinance/frax-standard-solidity/tar.gz/edd667c2be4b455176a799cff9b932386393ef8d:
+  frax-standard-solidity@https://codeload.github.com/FraxFinance/frax-standard-solidity/tar.gz/5aab6135d727fd604f31f082fd061dd983b39b23:
     resolution:
       {
-        tarball: https://codeload.github.com/FraxFinance/frax-standard-solidity/tar.gz/edd667c2be4b455176a799cff9b932386393ef8d,
+        tarball: https://codeload.github.com/FraxFinance/frax-standard-solidity/tar.gz/5aab6135d727fd604f31f082fd061dd983b39b23,
       }
-    version: 1.1.0
+    version: 1.1.3
 
   fs-extra@11.3.0:
     resolution:
@@ -1083,9 +1083,9 @@ packages:
     engines: { node: ">=14.17" }
     hasBin: true
 
-  undici-types@5.26.5:
+  undici-types@7.16.0:
     resolution:
-      { integrity: sha512-JlCMO+ehdEIKqlFxk6IfVoAUVmgz7cU7zD/h9XZ0qzeosSHmUJVOzSQvvYSYWXkFXC+IfLKSIffhv0sVZup6pA== }
+      { integrity: sha512-Zz+aZWSj8LE6zoxD+xrjh4VfkIG8Ya6LvYkZqtUQGJPZjYl53ypCaUwWqo7eI0x66KBGeRo+mlBEkMSeSZ38Nw== }
 
   universalify@2.0.1:
     resolution:
@@ -1216,15 +1216,15 @@ snapshots:
   "@types/fs-extra@11.0.4":
     dependencies:
       "@types/jsonfile": 6.1.4
-      "@types/node": 18.19.120
+      "@types/node": 24.10.1
 
   "@types/jsonfile@6.1.4":
     dependencies:
-      "@types/node": 18.19.120
+      "@types/node": 24.10.1
 
-  "@types/node@18.19.120":
+  "@types/node@24.10.1":
     dependencies:
-      undici-types: 5.26.5
+      undici-types: 7.16.0
 
   acorn-walk@8.3.4:
     dependencies:
@@ -1459,11 +1459,10 @@ snapshots:
 
   forge-std@https://codeload.github.com/foundry-rs/forge-std/tar.gz/60acb7aaadcce2d68e52986a0a66fe79f07d138f: {}
 
-  frax-standard-solidity@https://codeload.github.com/FraxFinance/frax-standard-solidity/tar.gz/edd667c2be4b455176a799cff9b932386393ef8d:
+  frax-standard-solidity@https://codeload.github.com/FraxFinance/frax-standard-solidity/tar.gz/5aab6135d727fd604f31f082fd061dd983b39b23:
     dependencies:
-      "@openzeppelin/contracts": 5.4.0
       "@types/fs-extra": 11.0.4
-      "@types/node": 18.19.120
+      "@types/node": 24.10.1
       change-case: 4.1.2
       commander: 10.0.1
       date-fns: 2.30.0
@@ -1479,7 +1478,7 @@ snapshots:
       solhint-plugin-prettier: 0.1.0(prettier-plugin-solidity@1.4.3(prettier@3.6.2))(prettier@3.6.2)
       solidity-bytes-utils: 0.8.4
       toml: 3.0.0
-      ts-node: 10.9.2(@types/node@18.19.120)(typescript@5.8.3)
+      ts-node: 10.9.2(@types/node@24.10.1)(typescript@5.8.3)
       typescript: 5.8.3
     transitivePeerDependencies:
       - "@swc/core"
@@ -1956,14 +1955,14 @@ snapshots:
 
   toml@3.0.0: {}
 
-  ts-node@10.9.2(@types/node@18.19.120)(typescript@5.8.3):
+  ts-node@10.9.2(@types/node@24.10.1)(typescript@5.8.3):
     dependencies:
       "@cspotcode/source-map-support": 0.8.1
       "@tsconfig/node10": 1.0.11
       "@tsconfig/node12": 1.0.11
       "@tsconfig/node14": 1.0.3
       "@tsconfig/node16": 1.0.4
-      "@types/node": 18.19.120
+      "@types/node": 24.10.1
       acorn: 8.15.0
       acorn-walk: 8.3.4
       arg: 4.1.3
@@ -1980,7 +1979,7 @@ snapshots:
 
   typescript@5.8.3: {}
 
-  undici-types@5.26.5: {}
+  undici-types@7.16.0: {}
 
   universalify@2.0.1: {}
 
