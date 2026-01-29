@@ -12,8 +12,8 @@ dependencies:
     specifier: github:foundry-rs/forge-std#60acb7aaadcce2d68e52986a0a66fe79f07d138f
     version: github.com/foundry-rs/forge-std/60acb7aaadcce2d68e52986a0a66fe79f07d138f
   frax-standard-solidity:
-    specifier: github:FraxFinance/frax-standard-solidity#v1.1.3
-    version: github.com/FraxFinance/frax-standard-solidity/5aab6135d727fd604f31f082fd061dd983b39b23
+    specifier: github:FraxFinance/frax-standard-solidity#v1.1.4
+    version: github.com/FraxFinance/frax-standard-solidity/4603eb28fc17a38dc097ead3d632b6e5ea14e932
   solidity-bytes-utils:
     specifier: github:GNSPS/solidity-bytes-utils
     version: github.com/GNSPS/solidity-bytes-utils/fc502455bb2a7e26a743378df042612dd50d1eb9
@@ -176,14 +176,14 @@ packages:
       { integrity: sha512-yTbItCNreRooED33qjunPthRcSjERP1r4MqCZc7wv0u2sUkzTFp45tgUfS5+r7FrZPdmCCNflLhVSP/o+SemsQ== }
     dependencies:
       "@types/jsonfile": 6.1.4
-      "@types/node": 24.10.9
+      "@types/node": 25.1.0
     dev: false
 
   /@types/jsonfile@6.1.4:
     resolution:
       { integrity: sha512-D5qGUYwjvnNNextdU59/+fI+spnwtTFmyQP0h+PfIOSkNfpU6AOICUOkm4i0OnSk+NyjdPJrxCDro0sJsWlRpQ== }
     dependencies:
-      "@types/node": 24.10.9
+      "@types/node": 25.1.0
     dev: false
 
   /@types/node@24.10.9:
@@ -198,7 +198,6 @@ packages:
       { integrity: sha512-t7frlewr6+cbx+9Ohpl0NOTKXZNV9xHRmNOvql47BFJKcEG1CxtxlPEEe+gR9uhVWM4DwhnvTF110mIL4yP9RA== }
     dependencies:
       undici-types: 7.16.0
-    dev: true
 
   /acorn-walk@8.3.4:
     resolution:
@@ -1659,13 +1658,13 @@ packages:
       { integrity: sha512-B58NGBEoc8Y9MWWCQGl/gq9xBCe4IiKM0a2x7GZdQKOW5Exr8S1W24J6OgM1njK8xCRGvAJIL/MxXHf6SkmQKQ== }
     dev: true
 
-  github.com/FraxFinance/frax-standard-solidity/5aab6135d727fd604f31f082fd061dd983b39b23:
+  github.com/FraxFinance/frax-standard-solidity/4603eb28fc17a38dc097ead3d632b6e5ea14e932:
     resolution:
       {
-        tarball: https://codeload.github.com/FraxFinance/frax-standard-solidity/tar.gz/5aab6135d727fd604f31f082fd061dd983b39b23,
+        tarball: https://codeload.github.com/FraxFinance/frax-standard-solidity/tar.gz/4603eb28fc17a38dc097ead3d632b6e5ea14e932,
       }
     name: frax-standard-solidity
-    version: 1.1.3
+    version: 1.1.4
     prepare: true
     requiresBuild: true
     dependencies:

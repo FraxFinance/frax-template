@@ -33,7 +33,7 @@
   "dependencies": {
     "ds-test": "github:dapphub/ds-test",
     "forge-std": "github:foundry-rs/forge-std#60acb7aaadcce2d68e52986a0a66fe79f07d138f",
-    "frax-standard-solidity": "github:FraxFinance/frax-standard-solidity#v1.1.3",
+    "frax-standard-solidity": "github:FraxFinance/frax-standard-solidity#v1.1.4",
     "solidity-bytes-utils": "github:GNSPS/solidity-bytes-utils"
   }
 }
