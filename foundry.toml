@@ -16,7 +16,7 @@ script = "src/script"
 # A list of paths to look for libraries in
 libs = ['lib', 'node_modules']
 # Whether or not to enable `vm.ffi`
-ffi = false
+ffi = true
 # Enables or disables the optimizer
 optimizer = false
 # The number of optimizer runs
@@ -29,6 +29,7 @@ bytecode_hash = "none"
 cbor_metadata = false
 # Contracts to track with --gas-report
 #gas_reports = [] 
+fs_permissions = [{ access = "read-write", path = "./"}]
 
 [fuzz]
 # Amount of runs per fuzz test
