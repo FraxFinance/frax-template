@@ -11,7 +11,8 @@ jobs:
     timeout-minutes: 60
     runs-on: ubuntu-latest
     env:
-      MAINNET_URL: ${{ secrets.MAINNET_RPC_URL }}
+      RPC_MAINNET: ${{ secrets.RPC_MAINNET }}
+      RPC_OPTIMISM: ${{ secrets.RPC_OPTIMISM }}
       FOUNDRY_PROFILE: "test"
     steps:
       - uses: actions/setup-node@v2
