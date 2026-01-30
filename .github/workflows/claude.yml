@@ -1,11 +1,11 @@
 name: Claude Code
 
 on:
-  # Auto-review PRs to main
+  # Auto-review PRs to master
   pull_request:
     types: [opened, synchronize, ready_for_review, reopened]
     branches:
-      - main
+      - master
 
   # @claude mentions in PR comments
   issue_comment:
@@ -16,7 +16,7 @@ on:
     types: [submitted]
 
 jobs:
-  # Auto-review PRs targeting main
+  # Auto-review PRs targeting master
   auto-review:
     if: github.event_name == 'pull_request' && !github.event.pull_request.draft
     runs-on: ubuntu-latest
