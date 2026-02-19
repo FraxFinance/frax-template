@@ -12,6 +12,7 @@ jobs:
     runs-on: ubuntu-latest
     env:
       MAINNET_RPC_URL: ${{ secrets.MAINNET_RPC_URL }}
+      FRAXTAL_RPC_URL: "https://rpc.frax.com"
       FOUNDRY_PROFILE: "test"
     steps:
       - uses: actions/setup-node@v2
