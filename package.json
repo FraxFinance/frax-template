@@ -30,6 +30,11 @@
     "ts-node": "^10.9.2",
     "typescript": "^5.8.3"
   },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "frax-standard-solidity"
+    ]
+  },
   "dependencies": {
     "ds-test": "github:dapphub/ds-test",
     "forge-std": "github:foundry-rs/forge-std#60acb7aaadcce2d68e52986a0a66fe79f07d138f",
